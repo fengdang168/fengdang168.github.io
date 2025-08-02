@@ -483,40 +483,230 @@ body {
 .login-btn:hover {
     color: #31c27c;
 }
-
 /* 以下是界面右侧 css 样式 */
 /* 播放器主体(歌词和封面) */
 .player {
     height: 100%;
-    width: 400px;
+    width: 550px;
     float: right;
     position: relative;
+    transition: all ease-in-out 0.3s;
+    border-radius:10px;
+    background: linear-gradient(to top,rgb(255 255 255 / 0%) 0,rgb(255 255 255 / 2%) 50%,rgb(255 255 255 / 0%) 100%);
 }
-
+.full-player{
+    width:100% !important;
+    height:100%;
+    top:0;
+    left:0;
+    display:block !important;
+    transition: all ease-in-out 0.3s;
+    background: linear-gradient(to left, rgb(255 255 255 / 0%) 0%, rgba(255 255 255 / 2%), rgb(255 255 255 / 0%) 100%);
+}
+.full-player .lyric-name{
+    letter-spacing:1px;
+    margin-top:-40px;
+}
+.full-player .mc{
+    margin-top:0;
+}
+.full-player .music-cover{
+    width:150px;
+    height:150px;
+}
+.full-player .lplaying{
+    letter-spacing:2px;
+    line-height:30px;
+    font-size:20px !important;
+}
+.full-player .lrc-item{
+}
+.full-player .lplaying>.tlyric{
+    letter-spacing:4px;
+}
+.btn-bar, .data-area {
+    transition: opacity ease-in-out 0.3s;
+}
+.btn-bar.hidden, .data-area.hidden {
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+.music_co{
+    width: 100%;
+    aspect-ratio:1;
+    left: 0;
+    position: relative;
+    top: 0;
+    border-radius:6px;
+    overflow:hidden;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+}
+.music_co-ad{
+    opacity:0.85;
+    left: 0;
+    position: relative;
+    aspect-ratio: 1;
+    top: 0;
+    border-radius:6px;
+    overflow:hidden;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+}
+._2tmbv35nrc{
+    width:100%;
+    height:100%;
+}
+._cz9jjvqe5ze{
+    width:100%;
+    height:100%;
+    display:flex;justify-content:center;align-items:center;
+}
+._cz9jjvqe5ze iframe{
+    transform: scale(1.1);
+}
+.music_co:hover,.sheet-item:hover .music_co{
+    width:100%;
+    min-width:unset;
+    opacity:1;
+    filter: brightness(0.9);
+    transition: all ease-in-out 0.3s;
+}
+.music_ti{
+    position: relative;
+    height: 35px;
+    line-height:14px;
+    bottom:0;
+    border-radius:8px;
+    overflow:hidden;
+    width:100%;
+    color:rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    transition: all ease-in-out 0.3s;
+}
+.music_ti-ad{
+    position: relative;
+    height: 35px;
+    line-height:14px;
+    bottom:0;
+    border-radius:8px;
+    overflow:hidden;
+    width:100%;
+    color:rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    transition: all ease-in-out 0.3s;
+}
+.music_ti:hover,.sheet-item:hover .music_ti{
+    color:white;
+    backdrop-filter: blur(2px);
+    background-color: unset;
+    transition: all ease-in-out 0.3s;
+    border-radius:0;
+    align-items: center;
+}
+.music_ti-ad:hover, .sheet-item:hover .music_ti-ad {
+    color: #fff;
+    backdrop-filter: blur(2px);
+    background-color: unset;
+    transition: all ease-in-out .3s;
+    border-radius: 0;
+    align-items: center;
+}
+.music_ti:hover,.sheet-playing:hover .music_ti{
+}
+.music_co:hover,.sheet-playing:hover .music_co{
+    filter: unset;
+}
+    
 /* 歌曲封面区域 */
 .cover {
     position: relative;
-    display: block;
-    width: 186px;
-    height: 186px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
     margin: auto;
+    margin-top:10px;
 }
 
-.cover:after {
-    content: "";
-    position: absolute;
-    left: 9px;
-    top: 0;
-    width: 201px;
-    height: 180px;
-    background: url(../images/album_cover_player.png) 0 0 no-repeat;
-    pointer-events: none;
+.mc{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+    transition: all ease-in-out .5s;
 }
 /* 歌曲封面图片 */
 .music-cover {
-    vertical-align: middle;
-    width: 186px;
-    height: 186px;
+	width:100px;
+	height:100px;
+	z-index:1;
+	border:14px solid rgba(255,255,255,0.1);
+	filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+	box-shadow: 0 0 0 1px rgb(255 255 255 / 20%);
+	border-radius:50%;
+	-webkit-animation:jcmusic 30s infinite linear ;
+	animation:jcmusic 30s infinite linear ;
+	transition: all ease-in-out .5s;
+}
+
+@-webkit-keyframes jcmusic {
+
+0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+100%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(360deg);
+}
+}
+
+@-webkit-keyframes jcmusicd {
+0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 0.9;
+}
+
+20% {
+    -webkit-transform: rotate(-72deg);
+    transform: rotate(-72deg);
+    opacity: 0.9;
+}
+40% {
+    -webkit-transform: rotate(-144deg);
+    transform: rotate(-144deg) ;
+    opacity: 1;
+}
+60% {
+    -webkit-transform: rotate(-216deg);
+    transform: rotate(-216deg) ;
+    opacity: 0.8;
+}
+80% {
+    -webkit-transform: rotate(-288deg);
+    transform: rotate(-288deg) ;
+    opacity: 0.85;
+}
+100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg) ;
+    opacity: 0.9;
+}
 }
 
 /* 歌词显示区域 */
