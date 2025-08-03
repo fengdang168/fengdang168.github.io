@@ -749,6 +749,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    text-shadow: 0px 0px 2px #de38e100, 0px 0px 5px #fd83e8a1, 0px 0px 5px #f10cdf0d;
 }
 /* 歌词显示区显示的提示语(如加载中、无歌词等) */
 .lyric-tip {
