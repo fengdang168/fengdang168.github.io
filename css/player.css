@@ -11,7 +11,7 @@ blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr
 }
 body, button, input, select, textarea, th {
     color: #333;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.15);
     font-size: 14px;
     line-height: 1.5;
     font-family: poppin, 'PingFang SC', Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
@@ -214,11 +214,14 @@ html,body {
 
 /* 搜索工具样式 */
 #search-area {
-    padding: 25px 15px;
+    padding: 16px 15px;
+	width: 330px;
 }
 .search-group {
-    font-size: 0;
-    padding-bottom: 10px;
+     padding-bottom: 20px;
+    display:flex;
+        flex-wrap: nowrap;
+	    align-items: center;
 }
 .search-group>input, .search-group>button {
     -webkit-box-sizing: border-box;
@@ -226,20 +229,34 @@ html,body {
     box-sizing: border-box;
 }
 .search-group>input {
-    padding: 5px;
-    border: 1px solid #a7a1a1;
+     padding: 5px;
+    border:unset;
     height: 35px;
     width: 80%;
+	color: #ffffff;
+	text-align:center;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
 }
 .search-group>button {
-    border: 1px solid #a7a1a1;
-    background-color: #eee;
+   border: unset;
+    color:#ffc107;
     height: 35px;
-    margin-left: -1px;
+    line-height:34px;
     width: 20%;
     white-space: nowrap;
     text-overflow: clip;
     overflow: hidden;
+	border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+	transition:ease .5s;
+}
+.radio-group {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4px;
 }
 .radio-group>label {
     margin-right: 10px;
@@ -1077,4 +1094,18 @@ html,body {
     object-fit: cover;
     display:none;
     transition: all ease-in-out 0.3s;
+}
+.xmt{
+    font-size:12px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: -10px;
+}
+.tb {
+    position: relative;
+    width: 20px;
+    top: 8px;
+    border-radius: 6px;
+    opacity: 1;
+    left: 4px;
+    background: rgb(255 255 255 / 20%);
 }
