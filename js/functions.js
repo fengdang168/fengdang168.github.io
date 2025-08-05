@@ -323,11 +323,12 @@ function searchBox() {
     '        <button class="search-submit" type="submit">搜 索</button>' + 
     '    </div>' + 
     '    <div class="radio-group" id="music-source">' + 
-    '       <label><input type="radio" name="source" value="netease" checked=""> 网易云</label>' + 
-    '       <label><input type="radio" name="source" value="tencent"> QQ</label>' + 
-    '       <label><input type="radio" name="source" value="xiami"> 虾米</label>' + 
-    '       <label><input type="radio" name="source" value="kugou"> 酷狗</label>' + 
-    '       <label><input type="radio" name="source" value="baidu"> 百度</label>' + 
+    '    <label><input class="radio_type" type="radio" name="source" value="netease" checked=""><img class="tb" src="./images/tb/ww.png"/></label>' + 
+    '    <label><input class="radio_type" type="radio" name="source" value="tencent"><img class="tb" src="./images/tb/qq.png"/></label>' +
+    //'       <label class="xm"><input title="接口失效" class="radio_type_disable xm" disabled="disabled" type="radio" name="source" value="kugou"><img class="tb" src="./images/tb/kk.png"/></label>' + 
+    //'       <label class="xm"><input title="接口失效" class="radio_type_disable xm" disabled="disabled" type="radio" name="source" value="xiami"><img class="tb" src="./images/tb/x.jpg"/></label>' + 
+    //'       <label class="xm"><input title="接口失效" class="radio_type_disable xm" disabled="disabled" type="radio" name="source" value="baidu"><img class="tb" src="./images/tb/b.jpg"/></label>' + 
+    '    <p class="xmt">QQ搜索出来的歌曲结果<br>只能听平台免费或者无版权的</p>' +
     '   </div>' + 
     '</div></form>';
     layer.open({
