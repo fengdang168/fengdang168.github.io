@@ -203,15 +203,22 @@ html,body {
     margin: 0 2px;
 }
 .btn:hover {
-    border: 1px solid #d206eb;
-    opacity: 1;
-    filter: alpha(opacity=100);
-	color: #fff;
+   background: rgb(255, 255, 255, 0.3);
 }
 .btn[data-action='player'] {
     display: none;
 }
-
+.active:before{
+   content: '';
+    width: 15px;
+    height: 6px;
+    position: absolute;
+    background: #ff5e5e;
+    bottom: -6px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    left: 50%;
+    transform: translate(-50%);
+}
 /* 搜索工具样式 */
 #search-area {
     padding: 16px 15px;
