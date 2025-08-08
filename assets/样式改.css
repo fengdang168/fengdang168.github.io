@@ -58,7 +58,7 @@
 
         .bookmark:hover {
             background-color: rgba(0, 0, 0, 0);
-			color: #000;
+			color: #08fdfd;
             transform: scale(1.2,1.2);
 			              
         }
