@@ -522,9 +522,9 @@ html,body {
 .sheet-playing:before {
     content: url(../images/wave.gif);
     position: absolute;
-    top: 90px;
+    top: 10px;
     left: 50%;
-    margin-left: -45px;
+    margin-left: -60px;
 }
 
 /* 歌单名字 */
