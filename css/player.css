@@ -820,11 +820,11 @@ html,body {
     letter-spacing: 1px;
     font-weight: bold;
     filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
-    background: linear-gradient(to right, #ffffff 25%, #37d8ff 40%, #ffdd5b 50%, #ff5151 80%);
+    background: linear-gradient(to right, #ffffff 20%, #37d8ff 35%, #ffdd5b 55%, #ff5151 80%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-	text-shadow: 0px 0px 2px #de38e100, 0px 0px 5px #fd83e8a1, 0px 0px 5px #f10cdf0d;
+
 }
 /* 歌词显示区显示的提示语(如加载中、无歌词等) */
 .lyric-tip {
