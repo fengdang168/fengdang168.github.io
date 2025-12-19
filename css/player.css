@@ -20,6 +20,11 @@ body, button, input, select, textarea, th {
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%
 }
+#jinrishici-sentence {
+   font-size:20px;
+   color: white;
+   text-shadow: 0px 0px 15px #00FFFF,0px 0px 15px #00FFFF,0px 0px 15px #00FFFF;
+        }
 #music-info, #toggleTlyric,#music-progress,#volume-progress, #lyric-full, #lyric-activea, input, option,.mkpgb-dot,.list-menu, .list-icon,.list-mobile-menu,.mCSB_dragger,.sheet-name,.sheet-cover,.bs, .btn,.auth-name,.music-album,.cancel-btn, .close-btn, .info-btn, .ld, .list-item, .login-in, .progress, .search-submit, .sheet-item, .tb, .wallpaper-item, .volume-box, a{
 	cursor:url(../images/cur/pointer.cur),pointer !important;}
 li {
